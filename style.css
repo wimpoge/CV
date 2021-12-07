@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Ubuntu:ital,wght@0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Libre+Barcode+128+Text&family=Ubuntu:ital,wght@0,700;1,400;1,700&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Didact Gothic', sans-serif;
+    
+}
+
+body {
+    background: linear-gradient(120deg, rgba(54, 51, 88, 0.733) 0%, rgb(79, 83, 139) 100%);
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+}
+
+.logo-name {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+.nav-right {
+    display: flex;
+    margin: 0.5rem;
+    gap: 5rem;
+    list-style: none; 
+    text-decoration: none;
+}
+
+.nr1 {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nr1:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* Profile */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem; 
+    row-gap: 1rem;
+}
+
+.profile img {
+    width: 200px;
+    height: auto;
+    border: solid 1px #ffffff;
+    border-radius: 2rem;
+}
+
+.profile .name {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.biodata {
+    text-align: center;
+    
+}
+
+.biodata span {
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.li-bd {
+    display: flex;
+    list-style: none;
+    gap: 8rem;
+    margin-top: 3rem;
+}
+
+.li-bd li:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.li-bd li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.li-bd li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* Pendidikan */
+
+.pendidikan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem; 
+    row-gap: 1rem;
+}
+
+.pendidikan .name {
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.pendidikan-content {
+    gap: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+/* box */
+.box {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    
+}
+
+.box p {
+    text-align: center;
+    top: 15%;
+}
+
+.box .front, .box .back {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: rgb(183, 200, 255);
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163, 61, 21, 0.200), 0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+}
+
+.box .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+
+.box .back iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+
+.box .front p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box:hover .front {
+    transform: perspective(800px) rotateX(180deg);
+}
+
+.box:hover .back {
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0deg);
+}
+
+/* box-1 */
+
+.box-1 {
+    width: 350px;
+    height: 250px;
+    position: relative;
+}
+
+.box-1 p {
+    text-align: center;
+    top: 15%;
+}
+
+.box-1 .front-1, .box-1 .back-1 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: rgb(183, 200, 255);
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163, 61, 21, 0.200), 0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+}
+
+.box-1 .back-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+
+.box-1 .back-1 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.box-1 .front-1 p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box-1:hover .front-1 {
+    transform: perspective(800px) rotateX(180deg);
+}
+
+.box-1:hover .back-1 {
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0deg);
+}
+
+/* box-2 */
+.box-2 {
+    width: 350px;
+    height: 250px;
+    position: relative;
+}
+
+.box-2 p {
+    text-align: center;
+    top: 15%;
+}
+
+.box-2 .front-2, .box-2 .back-2 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: rgb(183, 200, 255);
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163, 61, 21, 0.200), 0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+}
+
+.box-2 .back-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+
+.box-2 .back-2 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.box-2 .front-2 p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box-2:hover .front-2 {
+    transform: perspective(800px) rotateX(180deg);
+}
+
+.box-2:hover .back-2 {
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0deg);
+}
+
+/* box-3 */
+.box-3 {
+    width: 350px;
+    height: 250px;
+    position: relative;
+}
+
+.box-3 p {
+    text-align: center;
+    top: 15%;
+}
+
+.box-3 .front-3, .box-3 .back-3 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: rgb(183, 200, 255);
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163, 61, 21, 0.200), 0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+}
+
+.box-3 .back-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+
+.box-3 .back-3 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.box-3 .front-3 p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box-3:hover .front-3 {
+    transform: perspective(800px) rotateX(180deg);
+}
+
+.box-3:hover .back-3 {
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0deg);
+}
+
+/* box-4 */
+.box-4 {
+    width: 350px;
+    height: 250px;
+    position: relative;
+}
+
+.box-4 p {
+    text-align: center;
+    top: 15%;
+}
+
+.box-4 .front-4, .box-4 .back-4 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: rgb(183, 200, 255);
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163, 61, 21, 0.200), 0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+}
+
+.box-4 .back-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+
+.box-4 .back-4 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.box-4 .front-4 p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box-4:hover .front-4 {
+    transform: perspective(800px) rotateX(180deg);
+}
+
+.box-4:hover .back-4 {
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0deg);
+}
