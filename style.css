@@ -518,4 +518,21 @@ ul.slide li.slide-2 {
     
 }
 
+/* Service */
+/* skill */
+.service {
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
 
+.service img {
+    margin: 2rem;
+    width: 100px;
+}
